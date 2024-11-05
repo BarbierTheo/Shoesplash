@@ -6,22 +6,135 @@
 
 /* HEADER */
 
+header {
+    background-color: #f5d5f6;
+    flex-direction: row;
+    height: 15rem;
+}
+
 /* .topbar -> header livraison offerte */
 
-/* header>.container -> mon panier  */
+.topbar {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding: 0.5rem;
+}
 
+/* header>div.container>a>img -> logo */
+
+header>div.container>a>img {
+    float: left;
+
+}
+
+/* #cart -> panier */
+
+#cart {
+    float: right;
+}
+
+/* header>nav -> nav bar */
+
+nav {
+    display: flex;
+
+}
+
+/* header>nav>a : liens nav bar */
+
+nav>a {
+    text-decoration: none;
+}
+
+/* BODY */
+
+body{
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+/* .news -> choix entre 3, columns */
+.news{
+    display: flex;
+    flex-direction: row;
+}
+
+#new, #best, #crush {
+    
+}
+
+#new{
+    display: flex;
+    h2{background-color:#e932c3 ;}
+}
+#best{
+    display: flex;
+    h2{background-color:#92be44;}
+}
+#crush{
+    display: flex;
+    h2{background-color: #0099b1;}
+}
+
+
+
+
+/* FOOTER */
+
+/* #info -> ligne rose + foncé avec 5 icones */
+#info {
+    background-color: #e4afe2;
+    display: flex;
+    flex-direction: row;
+}
+
+/* #bottombar -> barre du bas, rose - foncé, 3 listes */
+#bottombar {
+    background-color: #f5d5f6;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
+
+
+/* HEADER */
+/* .topbar -> header livraison offerte */
+/* header>.container -> logo + mon panier + navbar */
+/* header>div.container>a>img -> logo */
+/* #cart -> panier */
 /* header>nav -> nav bar */
 
 /* MAIN */
 
 /* .slider -> main object front page */
-
 /* .select -> choix entre 5 chaussures, row */
-
 /* .news -> choix entre 3, columns */
 
 /* FOOTER */
 
 /* #info -> ligne rose + foncé avec 5 icones */
-
 /* #bottombar -> barre du bas, rose - foncé, 3 listes */
+
+/* couleurs : 
+    #f5d5f6 rose pâle (header, footer)
+    #f2f2f2 rose + clair (body)
+    #e4afe2 rose + foncé (cart, #info)
+
+    .news titres : #e932c3 #92be44 #0099b1
+*/
