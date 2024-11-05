@@ -1,0 +1,49 @@
+Vous devrez intégrer à votre projet les icônes Font Awesome et la police Google Font Courgette.
+Mais ce point doit maintenant être une formalité pour vous ;-)
+Ensuite vous devrez implémenter votre propre feuille de style qui sera responsable du rendu visuel.
+Celui devra ressembler aux captures d'écran fournies ci-dessous (Rendu desktop et mobile).
+Le rendu pour Mobile sera effectif dès que la largeur de la fenêtre du Navigateur sera inférieure
+à 640 pixels.
+Étudier la structure HTML du document proposé sans la modifier avant de vous lancer dans l'écriture de votre propre feuille de style.
+
+Question 1
+
+Dans un premier temps vous ferez en sorte d'inclure la marge interne et la bordure à la largeur de tous les éléments de la page. Voir exercice précédent.
+Vous rendrez responsives toutes les images de votre page en jouant sur la propriété max-width du sélecteur img.
+Vous définirez une transition de type ease et de durée 0.2 seconde sur toutes la balises a de ce document afin d'améliorer les effets de survol.
+Les balises associées à la classe container devront occuper 75% de la largeur de la page jusqu'à une max-width de 1500 pixels.
+La pseudo-classe .clear :: after est utilisée pour stopper le flottement des contenus. Voir le positionnement flottant.
+
+
+Question 2
+
+Traitement de la partie Main :
+Traitement du slider, gestion du titre h2 et de l'image de ce conteneur.
+Afin d'afficher le titre h2 sur l'image vous devrez opter pour un positionnement absolu sinon il s'afficherait au-dessus.
+Vous donnerez une couleur de background pour h2 de #F6D4F5 avec une opacité de 0.8 pour le rendre légèrement transparent.
+Vous donnerez un effet d'ombrage aux différentes sections : #slider, #select,#new, #best et #crush
+Pour cela utilisez la propriété : box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+Concernant la section #select qui présente les 5 articles d'escarpin, vous devrez mettre en place une solution qui opère une transition de type ease.
+D'une durée de 0.2 seconde qui diminue l'opacité à 0.5 dès lors que le curseur de l'utilisateur pointera sur cette section.
+En revanche, lorsque le pointeur de la souris passera sur un des articles de cette section, l'opacité repassera à 1 mais de façon progressive en gérant la
+transition adéquate.
+
+Les titres h3 utiliseront la famille de fonte : Courgette.
+Traitement de la section #news : Vous pourrez utiliser ici les FlexBox pour gérer l'affichage responsiv des 3 blocs (Nos nouveautés, Nos Best-sellers, Notre coup de coeur), vous permettrez un retour à la ligne des blocs lorsque la largeur de la fenêtre du Navigateur sera réduite.
+Pour le reste vous essayerez de rester fidèle aux captures d'écran présentés précédemment.
+Ici aussi, vous utiliserez la famille de fonte : Courgette.
+
+Question 3
+
+Traitement de la partie Footer :
+Vous pourrez ici aussi utiliser les FlexBox pour gérer l'affichage responsiv des sections #info et #bottombar.
+Lorsque le pointeur de la souris survolera les différents articles de la section #info, la couleur du texte passera au blanc et le pointeur de la souris
+changera de type de curseur.
+Ceci de façon progressive en gérant une nouvelle transition.
+Pour la partie #bottombar, ça reste du classique, inspirez-vous de la capture d'écran pour mobile pour gérer les transformations liées à cette section.
+Question 4
+
+Mode mobile :
+Pour la gestion de la partie Responsive, lorsque la résolution sera inférieure à 640 pixels, vous opterez pour un affichage en colonne des diverses sections,
+cf. capture d'écran pour mobile.
+Vous ferez aussi disparaître le prix et le panier de l'affichage (ou pas...)
