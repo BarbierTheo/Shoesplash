@@ -4,12 +4,26 @@
     font-style: normal;
 }
 
+
+/* BODY, éléments principaux*/
+
+body{
+    background-color: #f2f2f2;
+
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
 /* HEADER */
 
 header {
     background-color: #f5d5f6;
     flex-direction: row;
     height: 15rem;
+    box-sizing: border-box
 }
 
 /* .topbar -> header livraison offerte */
@@ -39,6 +53,7 @@ header>div.container>a>img {
 
 nav {
     display: flex;
+    flex-direction: row;
 
 }
 
@@ -48,58 +63,100 @@ nav>a {
     text-decoration: none;
 }
 
-/* BODY */
+/* MAIN */
 
-body{
-    background-color: #f2f2f2;
+main{
+    box-sizing: border-box
+}
+
+
+/* Les plus beaux escarpins du monde */
+
+#slider{
+    text-align: center;
+}
+
+#slider>img{
+    width: 50%;
 }
 
 
 
+/* Choisissez vos escarpins */
 
-
-
-
-
-
-/* .news -> choix entre 3, columns */
-.news{
+#select{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#select>h1{
+width: 100%;
+}
+    
+#select>article{
+    max-width: 10%;
+}
+
+#select>img{
+}
+
+
+/* Nouveautés, best sellers, coup de coeur */
+
+#news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #new, #best, #crush {
-    
+    flex-direction: column;
 }
 
 #new{
-    display: flex;
     h2{background-color:#e932c3 ;}
+    width: 20%;
 }
+
 #best{
-    display: flex;
     h2{background-color:#92be44;}
+    width: 20%;
+
 }
 #crush{
-    display: flex;
     h2{background-color: #0099b1;}
+    width: 20%;
+}
+
+#news>img{
+    max-width: 100%;
 }
 
 
 /* FOOTER */
 
-/* #info -> ligne rose + foncé avec 5 icones */
+footer{
+    box-sizing: border-box
+}
+
+/* Paiment, livraison, carte, service, garantie */
+
 #info {
     background-color: #e4afe2;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
-/* #bottombar -> barre du bas, rose - foncé, 3 listes */
+/* Shoesplash, commandez en ligne, suivez-nous */
+
 #bottombar {
     background-color: #f5d5f6;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 li {
