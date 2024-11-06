@@ -24,19 +24,19 @@ img {
 }
 
 .container {
-    width: 75%;
+    width: 70%;
     max-width: 1500px;
     margin: 0 auto;
 }
 
-a:hover{
-    transition: ease 0.6s ;
+a:hover {
+    transition: ease 0.6s;
     background-color: #e4afe2;
 }
 
 /*        HEADER        */
 
-header>.container{}
+header>.container {}
 
 header {
     background-color: #f5d5f6;
@@ -71,12 +71,12 @@ header>div.container>a>img {
     margin: 3rem;
 }
 
-#cart>i{
-    color:#e4afe2;
+#cart>i {
+    color: #e4afe2;
     font-size: 2rem;
 }
 
-.left{
+.left {
     float: left;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ header>div.container>a>img {
     font-size: 1rem;
 }
 
-.left>span{
+.left>span {
     font-weight: bold;
 }
 
@@ -123,7 +123,7 @@ main {
     margin-top: 2rem;
     margin-bottom: 2rem;
     position: relative;
-    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 #slider>img {
@@ -160,7 +160,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 2rem;
-    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 #select>h1 {
@@ -172,6 +172,12 @@ main {
 
 #select>article {
     max-width: 12%;
+    opacity: 0.2;
+}
+
+#select>article:hover {
+    opacity: 1;
+    transition: ease-in-out 1s;
 }
 
 .escarpin>img {
@@ -201,7 +207,7 @@ main {
 #crush {
     background-color: white;
     padding: 1.2rem;
-    box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 #new {
@@ -212,7 +218,7 @@ main {
         color: white;
         padding: 0.5rem;
         margin: 0.5rem;
-        
+
     }
 
     width: 25%;
@@ -277,18 +283,18 @@ footer {
     padding: 0.9rem;
 }
 
-#info>article{
+#info>article {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#info>article:hover{
+#info>article:hover {
     color: white;
     transition: ease 0.6s;
 }
 
-#info>article>i{
+#info>article>i {
     padding-bottom: 0.3rem;
 }
 
@@ -306,8 +312,7 @@ footer {
     padding: 1rem;
 }
 
-#bottombar>article{
-}
+#bottombar>article {}
 
 #bottombar>article>ul>li {
     text-align: center;
@@ -316,7 +321,7 @@ footer {
     line-height: 1.5rem;
 }
 
-@media (max-width: 845px) {
+@media (max-width: 872px) {
     #cart {
         display: none;
     }
@@ -324,8 +329,8 @@ footer {
 
     @media (max-width: 640px) {
 
-        header{
-            padding-bottom: 29rem;
+        header {
+            padding-bottom: 32rem;
         }
 
         header>.container {
@@ -386,8 +391,8 @@ footer {
             align-items: center;
         }
 
-        #info>article{
-          padding-bottom: 2rem;
+        #info>article {
+            padding-bottom: 2rem;
 
         }
 
@@ -398,8 +403,6 @@ footer {
 
 
     }
-
-
 
 
 
@@ -428,5 +431,6 @@ footer {
     #f2f2f2 rose + clair (body)
     #e4afe2 rose + foncé (cart, #info)
 
-    .news titres : #e932c3 #92be44 #0099b1
-*/
+    .news titres : #e932c3 #92be44 #0099b1 */
+
+    /* Transition de la section #select */
