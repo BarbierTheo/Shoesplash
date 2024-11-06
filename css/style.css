@@ -28,7 +28,7 @@ img {
 header {
     background-color: #f5d5f6;
     flex-direction: row;
-    height: 15rem;
+    height: 18rem;
     box-sizing: border-box;
 }
 
@@ -62,18 +62,17 @@ header>div.container>a>img {
 /* Nav bar */
 
 nav {
-    background-color: #f5d5f6;
     clear: both;
+    padding: 2.3rem;
+    background-color: #f5d5f6;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav>a {
     text-decoration: none;
-    margin: 2rem;
     text-transform: uppercase;
-    font-family: sans-serif;
 }
 
 /*                MAIN                */
@@ -99,7 +98,7 @@ main {
     position: relative;
 }
 
-#slider>h2{
+#slider>h2 {
     position: absolute;
     margin: 0;
     z-index: 1;
@@ -109,13 +108,13 @@ main {
     font-size: 1rem;
 }
 
-#slider>h2>span{
+#slider>h2>span {
     font-weight: lighter;
 }
 
 /* Choisissez vos escarpins */
 
-.escarpin{
+.escarpin {
     font-family: Courgette;
 }
 
@@ -146,7 +145,7 @@ main {
     height: auto;
 }
 
-#select>article>h3{
+#select>article>h3 {
     white-space: nowrap;
     font-size: 1.2rem;
     font-weight: lighter;
@@ -207,15 +206,15 @@ main {
     width: 25%;
 }
 
-#news>article>h3{
+#news>article>h3 {
     font-family: Courgette;
     font-size: 1rem;
 }
 
-#news>article>small{
-    font-family: Courgette;    
+#news>article>small {
+    font-family: Courgette;
     font-size: 0.8rem;
-    
+
 }
 
 
@@ -228,6 +227,7 @@ main {
 
 footer {
     box-sizing: border-box;
+    margin: 0;
 }
 
 /* Paiment, livraison, carte, service, garantie */
@@ -246,11 +246,11 @@ footer {
     background-color: #f5d5f6;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    
+    justify-content: space-around;
+
 }
 
-#bottombar>article>h2{
+#bottombar>article>h2 {
     font-size: 0.9rem;
     text-align: center;
 }
@@ -262,6 +262,11 @@ li {
     font-size: 0.65rem;
     line-height: 1.2rem;
 }
+
+@media (max-width: 845px) {
+    #cart{
+        display: none;
+    }
 
 
 @media (max-width: 640px) {
@@ -284,20 +289,38 @@ li {
     }
 
     #slider {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 23rem;
+        margin-top: 5rem;
+        align-content: center;
     }
 
     #slider>h2 {
-        background-color: #92be44;
+        background-color: rgba(245, 213, 246);
+        font-size: 1rem;
+        margin-right: 2rem;
     }
+
+    #slider>img {
+        margin-top: 7rem;
+    }
+
 
     #select {
         flex-direction: column;
         align-items: center;
     }
 
+    #select>article{
+        max-width: 100%;
+    }
+
+    #select>img{
+    }
+
+    #new,
+    #best,
+    #crush {
+        width: 100%;
+    }
 
     #news {
         flex-direction: column;
