@@ -74,13 +74,13 @@ header>div.container>a>img {
 #cart>i{
     color:#e4afe2;
     font-size: 2rem;
-    align-self: center;
 }
 
 .left{
+    float: left;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: flex-end;
     padding-right: 0.5rem;
     font-size: 1rem;
 }
@@ -89,9 +89,6 @@ header>div.container>a>img {
     font-weight: bold;
 }
 
-.right{
-    display: flex;
-}
 
 
 /* Nav bar */
@@ -319,8 +316,6 @@ footer {
     line-height: 1.5rem;
 }
 
-
-
 @media (max-width: 845px) {
     #cart {
         display: none;
@@ -328,6 +323,10 @@ footer {
 
 
     @media (max-width: 640px) {
+
+        header{
+            padding-bottom: 29rem;
+        }
 
         header>.container {
             display: flex;
@@ -345,7 +344,6 @@ footer {
         }
 
         #slider {
-            margin-top: 13rem;
             align-content: center;
         }
 
@@ -375,6 +373,7 @@ footer {
         #best,
         #crush {
             width: 100%;
+            margin-bottom: 2rem;
         }
 
         #news {
