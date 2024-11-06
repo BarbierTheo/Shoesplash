@@ -6,6 +6,7 @@ Le rendu pour Mobile sera effectif dès que la largeur de la fenêtre du Navigat
 à 640 pixels.
 Étudier la structure HTML du document proposé sans la modifier avant de vous lancer dans l'écriture de votre propre feuille de style.
 
+
 Question 1
 
 Dans un premier temps vous ferez en sorte d'inclure la marge interne et la bordure à la largeur de tous les éléments de la page. Voir exercice précédent.
@@ -33,6 +34,7 @@ Traitement de la section #news : Vous pourrez utiliser ici les FlexBox pour gér
 Pour le reste vous essayerez de rester fidèle aux captures d'écran présentés précédemment.
 Ici aussi, vous utiliserez la famille de fonte : Courgette.
 
+
 Question 3
 
 Traitement de la partie Footer :
@@ -41,6 +43,8 @@ Lorsque le pointeur de la souris survolera les différents articles de la sectio
 changera de type de curseur.
 Ceci de façon progressive en gérant une nouvelle transition.
 Pour la partie #bottombar, ça reste du classique, inspirez-vous de la capture d'écran pour mobile pour gérer les transformations liées à cette section.
+
+
 Question 4
 
 Mode mobile :
