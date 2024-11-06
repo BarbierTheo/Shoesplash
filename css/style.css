@@ -4,12 +4,19 @@
     font-style: normal;
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /*          BODY, éléments principaux         */
 
 body {
     background-color: #f2f2f2;
     margin: 0rem;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 img {
@@ -58,6 +65,28 @@ header>div.container>a>img {
     float: right;
     margin: 3rem;
 }
+
+#cart>i{
+    color:#e4afe2;
+    font-size: 2rem;
+    align-self: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-right: 1rem;
+}
+
+.left>span{
+    font-weight: bolder;
+}
+
+.right{
+    display: flex;
+}
+
 
 /* Nav bar */
 
@@ -226,7 +255,6 @@ main {
 /*              FOOTER            */
 
 footer {
-    box-sizing: border-box;
     margin: 0;
 }
 
@@ -237,7 +265,17 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 0.9rem;
+}
+
+#info>article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info>article>i{
+    padding-bottom: 0.3rem;
 }
 
 /* Shoesplash, commandez en ligne, suivez-nous */
@@ -245,126 +283,133 @@ footer {
 #bottombar {
     background-color: #f5d5f6;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-
 }
 
 #bottombar>article>h2 {
-    font-size: 0.9rem;
+    font-size: 1em;
     text-align: center;
+    padding: 1rem;
 }
 
+#bottombar>article{
+}
 
-li {
+#bottombar>article>ul>li {
     text-align: center;
     list-style: none;
-    font-size: 0.65rem;
-    line-height: 1.2rem;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
 }
 
+
+
 @media (max-width: 845px) {
-    #cart{
-        display: none;
-    }
-
-
-@media (max-width: 640px) {
-
-    header>.container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header>div.container>a>img {}
-
     #cart {
         display: none;
     }
 
-    nav {
-        flex-direction: column;
-        width: 100%;
+
+    @media (max-width: 640px) {
+
+        header>.container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header>div.container>a>img {}
+
+        #cart {
+            display: none;
+        }
+
+        nav {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #slider {
+            margin-top: 5rem;
+            align-content: center;
+        }
+
+        #slider>h2 {
+            background-color: rgba(245, 213, 246);
+            font-size: 1rem;
+            margin-right: 2rem;
+        }
+
+        #slider>img {
+            margin-top: 7rem;
+        }
+
+
+        #select {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #select>article {
+            max-width: 100%;
+        }
+
+        #select>img {}
+
+        #new,
+        #best,
+        #crush {
+            width: 100%;
+        }
+
+        #news {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #info {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #info>article{
+          padding-bottom: 2rem;
+
+        }
+
+        #bottombar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
     }
 
-    #slider {
-        margin-top: 5rem;
-        align-content: center;
-    }
-
-    #slider>h2 {
-        background-color: rgba(245, 213, 246);
-        font-size: 1rem;
-        margin-right: 2rem;
-    }
-
-    #slider>img {
-        margin-top: 7rem;
-    }
-
-
-    #select {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #select>article{
-        max-width: 100%;
-    }
-
-    #select>img{
-    }
-
-    #new,
-    #best,
-    #crush {
-        width: 100%;
-    }
-
-    #news {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #info {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #bottombar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-}
 
 
 
 
 
 
+    /* HEADER */
+    /* .topbar -> header livraison offerte */
+    /* header>.container -> logo + mon panier + navbar */
+    /* header>div.container>a>img -> logo */
+    /* #cart -> panier */
+    /* header>nav -> nav bar */
 
-/* HEADER */
-/* .topbar -> header livraison offerte */
-/* header>.container -> logo + mon panier + navbar */
-/* header>div.container>a>img -> logo */
-/* #cart -> panier */
-/* header>nav -> nav bar */
+    /* MAIN */
 
-/* MAIN */
+    /* .slider -> main object front page */
+    /* .select -> choix entre 5 chaussures, row */
+    /* .news -> choix entre 3, columns */
 
-/* .slider -> main object front page */
-/* .select -> choix entre 5 chaussures, row */
-/* .news -> choix entre 3, columns */
+    /* FOOTER */
 
-/* FOOTER */
+    /* #info -> ligne rose + foncé avec 5 icones */
+    /* #bottombar -> barre du bas, rose - foncé, 3 listes */
 
-/* #info -> ligne rose + foncé avec 5 icones */
-/* #bottombar -> barre du bas, rose - foncé, 3 listes */
-
-/* couleurs : 
+    /* couleurs : 
     #f5d5f6 rose pâle (header, footer)
     #f2f2f2 rose + clair (body)
     #e4afe2 rose + foncé (cart, #info)
